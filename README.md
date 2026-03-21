@@ -1,60 +1,21 @@
 # Real-time Flood Forecast System (Yunlin County Government Project)
 
-## 📌 Project Overview
-This project involves the full-cycle development of an end-to-end Real-time Flood Forecasting System. It was independently developed and successfully deployed to the Yunlin County Government's cloud servers to provide automated, data-driven flood warnings.
+## Project Overview
+This project involves the development of an end-to-end real-time flood forecasting system. It was primarily developed and executed on Yunlin County Government server environment to support automated, data-driven flood monitoring.
 
-## 🛠️ Technical Highlights
-- [cite_start]**Automated ETL Pipeline**: Developed scripts for automated data ingestion from government APIs, including data cleaning and real-time database synchronization[cite: 20, 26].
-- [cite_start]**Production-Ready Deployment**: Responsible for model packaging into executable files and environment setup on Linux-based government servers[cite: 23, 27].
-- [cite_start]**ML Forecasting**: Implemented time-series predictive models (XGBoost, Tree-based) to provide hourly flood forecasts based on atmospheric and hydrological data[cite: 33, 34].
-- [cite_start]**System Integration**: Designed technical standards for seamless data bridging between the model outputs and the official government web platform[cite: 22, 23].
+## Technical Highlights
+- **Automated ETL Pipeline**: Developed scripts for automated data ingestion from government APIs, including data cleaning and structured data processing.
+- **Deployment & Environment Setup**: Organized model scripts and ran models on Linux-based servers.
+- **ML Forecasting**: Implemented time-series prediction models (XGBoost, LSTM, SVM) for flood forecasting based on environmental data.
+- **System Integration**: Prepared model outputs for downstream system usage.
 
-## 💻 Tech Stack
-- [cite_start]**Languages**: Python (Pandas, NumPy, Scikit-learn) [cite: 30, 40]
-- [cite_start]**Algorithms**: Supervised Learning, Time Series Modeling (XGBoost, Sliding Window) [cite: 33, 34]
-- [cite_start]**Tools**: Linux Server Management, Git/GitHub, API Integration [cite: 23, 31]
+## Tech Stack
+- **Languages**: Python (Pandas, NumPy, Scikit-learn)
+- **Algorithms**: Supervised Learning, Time Series Modeling (XGBoost, Sliding Window)
+- **Tools**: Linux Server, Git/GitHub, API Integration
 
-## 📈 Impact
-[cite_start]As the primary developer and technical liaison, I successfully bridged the requirements between the government, the research lab at NTU, and third-party tech companies to ensure a stable and reliable public warning system.
-
-
-
-**System Architecture:**
-****
-The system is a flood prediction pipeline that includes data collection, preprocessing, model prediction, and spatial analysis.
-
-**Data Source:**
-Rainfall data is automatically collected from government open APIs using a Python script.
-
-**Processing:**
-Time-series data is cleaned, normalized, and prepared using a sliding window method.
-
-**Model:**
-Machine learning models (e.g., LSTM, SVM) are used to predict flood depth for each monitoring station.
-
-**Post-processing (Spatial Analysis):**
-Model predictions are converted into village-level results using IDW.
-
-**Output:**
-Results are saved as structured files (e.g., Excel) for further analysis and visualization.
-****
-
-**Highlights:**
-
-****
-**Automation:**
-Built a semi-automated workflow that connects data collection, model prediction, and result output.
-
-**Multi-model Framework:**
-Tested multiple models (LSTM, SVM) across different monitoring stations.
-
-**Time-series Modeling:**
-Used sliding window and forecasting methods to handle time-series data.
-
-**Spatial Integration:**
-Combined model predictions with IDW to generate area-level results.
-****
-****
+## Impact
+Acted as a core developer, supporting collaboration between government units, research teams, and external partners to maintain a stable flood prediction workflow.
 ****
 **--關鍵檔案檔名--**
 
