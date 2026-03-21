@@ -17,19 +17,19 @@ This project involves the development of an end-to-end real-time flood forecasti
 ## Impact
 Acted as a core developer, supporting collaboration between government units, research teams, and external partners to maintain a stable flood prediction workflow.
 ****
-**--關鍵檔案檔名--**
+**--Key Files--**
 
 ****
 
-**程式碼功能：** 20251224(重要的即時淹水py整理).pdf
+**Code Overview：** 20251224(重要的即時淹水py整理).pdf
 
-**模型結果：** 各模型CE比較.xlsx
+**Model Results（模型結果）：** 各模型CE比較.xlsx
 
-**使用說明：** 使用說明與介紹.pdf
+**User Guide（使用說明）：** 使用說明與介紹.pdf
 
 ****
 
-**--雲林縣即時淹水預警系統--**
+**--雲林縣即時淹水預警系統介紹--**
 
 ****
 
