@@ -44,13 +44,13 @@
 
 ### 一、資料前處理模組
 本模組負責資料的標準化與清洗，確保模型訓練資料的物理合理性。
-* **11_debug_cwa_api_structure.py**: 自動化解析中央氣象署 API 結構，確保觀測資料擷取穩定性。
-* **13_standardize_historical_rain_depth_data.py**: 統一不同時間、來源的雨量與水深欄位，建立 17 個測站的一致性特徵。
-* **14_adjust_depth_no_flood.py**: 針對未淹水事件標記為 `-1`。
+* **11_debug_cwa_api_structure.py**: 自動化擷取中央氣象署 API 資料。
+* **13_standardize_historical_rain_depth_data.py**: 統一不同時間、來源的雨量與水深欄位，建立 17 個測站的特徵。
+* **14_adjust_depth_no_flood.py**: 針對未淹水事件進行標記設定（標記為 `-1`）。
 
 ### 二、即時資料管線
 * **realtime_rain_fetcher.py**: 持續維持固定長度的時間序列，每小時自動產出 11 個關鍵站點的最新雨量特徵矩陣。
-* **api_to_py.py**: 封裝 API 抓取流程，自動適應 Python 與 `.exe` 打包環境，確保部署無縫銜接。
+* **api_to_py.py**: 封裝 API 抓取流程，自動適應 Python 與 `.exe` 打包環境。
 
 ### 三、模型訓練與自回歸推論
 本系統之核心預測邏輯，採用 **XGBoost 自回歸機制**。
@@ -64,4 +64,4 @@
 
 ### 五、系統自動化與維運
 * **主控程式 (`run_all.py`)**: 整合所有子模組，透過無限迴圈與例外處理機制，達成 **24/7 每小時自動更新預報**。
-* **備份與重置 (`AD_realtime_reset_and_backup.py`)**: 具備時間戳記自動備份機制，確保歷史預報紀錄可回溯，並隨時提供系統乾淨啟動。
+* **備份與重置 (`AD_realtime_reset_and_backup.py`)**: （需要時需手動點擊執行）具備時間戳記自動備份機制，確保歷史預報紀錄可回溯，並隨時提供系統乾淨啟動。
