@@ -1,3 +1,40 @@
+**System Architecture:**
+****
+The system is a flood prediction pipeline that includes data collection, preprocessing, model prediction, and spatial analysis.
+
+**Data Source:**
+Rainfall data is automatically collected from government open APIs using a Python script.
+
+**Processing:**
+Time-series data is cleaned, normalized, and prepared using a sliding window method.
+
+**Model:**
+Machine learning models (e.g., LSTM, SVM) are used to predict flood depth for each monitoring station.
+
+**Post-processing (Spatial Analysis):**
+Model predictions are converted into village-level results using IDW.
+
+**Output:**
+Results are saved as structured files (e.g., Excel) for further analysis and visualization.
+****
+
+**Highlights:**
+
+****
+**Automation:**
+Built a semi-automated workflow that connects data collection, model prediction, and result output.
+
+**Multi-model Framework:**
+Tested multiple models (LSTM, SVM) across different monitoring stations.
+
+**Time-series Modeling:**
+Used sliding window and forecasting methods to handle time-series data.
+
+**Spatial Integration:**
+Combined model predictions with IDW to generate area-level results.
+****
+****
+****
 **--關鍵檔案檔名--**
 
 ****
