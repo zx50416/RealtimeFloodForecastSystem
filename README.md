@@ -1,3 +1,24 @@
+# Real-time Flood Forecast System (Yunlin County Government Project)
+
+## 📌 Project Overview
+This project involves the full-cycle development of an end-to-end Real-time Flood Forecasting System. It was independently developed and successfully deployed to the Yunlin County Government's cloud servers to provide automated, data-driven flood warnings.
+
+## 🛠️ Technical Highlights
+- [cite_start]**Automated ETL Pipeline**: Developed scripts for automated data ingestion from government APIs, including data cleaning and real-time database synchronization[cite: 20, 26].
+- [cite_start]**Production-Ready Deployment**: Responsible for model packaging into executable files and environment setup on Linux-based government servers[cite: 23, 27].
+- [cite_start]**ML Forecasting**: Implemented time-series predictive models (XGBoost, Tree-based) to provide hourly flood forecasts based on atmospheric and hydrological data[cite: 33, 34].
+- [cite_start]**System Integration**: Designed technical standards for seamless data bridging between the model outputs and the official government web platform[cite: 22, 23].
+
+## 💻 Tech Stack
+- [cite_start]**Languages**: Python (Pandas, NumPy, Scikit-learn) [cite: 30, 40]
+- [cite_start]**Algorithms**: Supervised Learning, Time Series Modeling (XGBoost, Sliding Window) [cite: 33, 34]
+- [cite_start]**Tools**: Linux Server Management, Git/GitHub, API Integration [cite: 23, 31]
+
+## 📈 Impact
+[cite_start]As the primary developer and technical liaison, I successfully bridged the requirements between the government, the research lab at NTU, and third-party tech companies to ensure a stable and reliable public warning system.
+
+
+
 **System Architecture:**
 ****
 The system is a flood prediction pipeline that includes data collection, preprocessing, model prediction, and spatial analysis.
