@@ -61,13 +61,13 @@ Acted as a core developer, supporting collaboration between government units, re
 ****
 
 
-### 一、資料前處理模組
+### 一、資料前處理
 本模組負責資料的標準化與清洗，確保模型訓練資料的物理合理性。
 * **11_debug_cwa_api_structure.py**: 自動化擷取中央氣象署 API 資料。
 * **13_standardize_historical_rain_depth_data.py**: 統一不同時間、來源的雨量與水深欄位，建立 17 個測站的特徵。
 * **14_adjust_depth_no_flood.py**: 針對未淹水事件進行標記設定（標記為 `-1`）。
 
-### 二、即時資料管線
+### 二、即時資料pipeline
 * **realtime_rain_fetcher.py**: 持續維持固定長度的時間序列，每小時自動產出 11 個關鍵站點的最新雨量特徵矩陣。
 * **api_to_py.py**: 封裝 API 抓取流程，自動適應 Python 與 `.exe` 打包環境。
 
@@ -76,7 +76,7 @@ Acted as a core developer, supporting collaboration between government units, re
 * **TRAIN_FINAL_MODELS.py**: 針對雲林縣或鄰近雲林縣之 17 個淹水點，分別訓練 T+1 至 T+4 預報，產出共 68 組最終部署模型權重。
 * **predict_ip_depth.py**: 載入權重後，以 `PrevDepth` (前一時刻預測深度) 作為特徵進行滾動式預測（自回歸），以增加預測準確率。
 
-### 四、空間聚合與風險輸出
+### 四、空間處理與風險輸出
 * **depth_to_village.py**: 利用「反距離權重法」，將離散的淹水點預測值，轉換為雲林縣各村里尺度的平均淹水深度。
 * **風險等級轉譯**: 依據預測深度，將連續數值轉換為 **Level 1–5 風險等級**。
 * **merge_village_levels_to_final.py**: 採用 Key-Value 對接方式更新成果檔，確保不破壞既有 Excel 公式與格式。
