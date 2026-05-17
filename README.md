@@ -82,5 +82,5 @@ Acted as a core developer, supporting collaboration between government units, re
 * **merge_village_levels_to_final.py**: 採用 Key-Value 對接方式更新成果檔，確保不破壞既有 Excel 公式與格式。
 
 ### 五、系統自動化與維運
-* **主控程式 (`run_all.py`)**: 整合所有子模組，透過無限迴圈與例外處理機制，達成 **24/7 每小時自動更新預報**。
+* **主控程式 (`run_all.py`)**: 整合所有子模組，透過無限迴圈與例外處理機制，完成自動更新預報。
 * **備份與重置 (`AD_realtime_reset_and_backup.py`)**: （需要時需手動點擊執行）具備時間戳記自動備份機制，確保歷史預報紀錄可回溯，並隨時提供系統乾淨啟動。
